@@ -3,4 +3,11 @@
   <groupId>org.nilesh.learnings</groupId>
   <artifactId>selguru99</artifactId>
   <version>0.0.1-SNAPSHOT</version>
+  <dependencies>
+  	<dependency>
+        <groupId>org.seleniumhq.selenium</groupId>
+        <artifactId>selenium-java</artifactId>
+        <version>3.3.1</version>
+    </dependency>
+  </dependencies>
 </project>
