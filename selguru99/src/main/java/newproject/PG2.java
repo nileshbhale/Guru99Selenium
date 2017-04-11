@@ -16,7 +16,7 @@ public class PG2
 		driver.get(baseUrl);
 		tagName = driver.findElement(By.id("Email")).getTagName();
 		System.out.println(tagName);
-		driver.close();
+		driver.quit();
 		System.exit(0);		
 	}
 }
