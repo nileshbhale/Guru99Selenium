@@ -26,9 +26,9 @@ public class AccessForm
 		driver.findElement(By.name("password")).sendKeys("tutorial");
 		driver.findElement(By.name("password")).submit();
 		
-		driver.findElement(By.cssSelector("input[value='Business']"));
+		driver.findElement(By.cssSelector("input[value='Business']")).click();
 		
-		//driver.quit();
+		driver.quit();
 	}
 
 }
