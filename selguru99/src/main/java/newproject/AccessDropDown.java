@@ -12,15 +12,21 @@ public class AccessDropDown
 		System.setProperty("webdriver.chrome.driver", "C:\\Users\\nilesh.bhale\\git\\Guru99Selenium\\selguru99\\src\\main\\resources\\chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
 		
+		//  Selecting from Drop-Down
+		
 		String baseUrl = "http://newtours.demoaut.com/mercuryregister.php";
-		
 		driver.get(baseUrl);
-		
 		Select drpCountry = new Select(driver.findElement(By.name("country")));
 		drpCountry.selectByVisibleText("ANTARCTICA");
 		
-		// Complete the rest of the stuff from home
+		// Selecting from Multi-choice list
 		
+		driver.get("http://jsbin.com/osebed/2");
+		Select fruits = new Select(driver.findElement(By.id("fruits")));
+		fruits.selectByVisibleText("Banana");
+		fruits.selectByIndex(1);
+		
+		driver.quit();
 
 	}
 
