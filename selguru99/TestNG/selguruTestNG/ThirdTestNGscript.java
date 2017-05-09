@@ -1,4 +1,5 @@
-package newproject;
+package selguruTestNG;
+
 
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.*;
